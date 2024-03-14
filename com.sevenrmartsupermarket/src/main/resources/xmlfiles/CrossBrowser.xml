@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="paralleltesting" thread-count="12" parallel="tests">
+	<listeners>
+		<listener
+			class-name="com.sevenrmartsupermarket.listeners.ExtentsReporter"></listener>
+	</listeners>
+	<test name="Running in  chrome">
+		<parameter name="browser" value="chrome"></parameter>
+		<classes>
+			<class name="com.sevenrmartsupermarket.tests.LoginTest"></class>
+		</classes>
+	</test>
+	<test name="Running in edge">
+		<parameter name="browser" value="edge"></parameter>
+		<classes>
+
+			<class name="com.sevenrmartsupermarket.tests.LoginTest"></class>
+		</classes>
+	</test>
+	<test name="Running in firefox">
+		<parameter name="browser" value="firefox"></parameter>
+		<classes>
+
+			<class name="com.sevenrmartsupermarket.tests.LoginTest"></class>
+		</classes>
+	</test>
+
+</suite>
