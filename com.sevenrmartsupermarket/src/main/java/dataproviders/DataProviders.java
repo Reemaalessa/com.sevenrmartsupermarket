@@ -12,7 +12,7 @@ public class DataProviders {
 	@DataProvider(name="sevenmartsupermarket")
 	public Object[][] login()
 	{
-		return new Object [][] {{"Reema","Man"},{"Gigo","Jijo"},{"Jesica","Manu"}};
+		return new Object [][] {{"anwr","Man"},{"Gigo","Jijo"},{"Jesica","Manu"}};
 	}
 	
 	@DataProvider(name="multilogin")
