@@ -25,7 +25,7 @@ public class ManageExpenseTest extends Base {
 		login.login("Amina", "B000A0GB7Q");
 		homepage = new HomePage(driver);
 		
-		manageexpensepage = new ManageExpensePage(driver);;
+		manageexpensepage = new ManageExpensePage(driver);
 		manageexpensepage.clickonmanageexpense();
 		manageexpensepage.selectTheExpenseCategory();
 		manageexpensepage.gethHeadTitleText();
@@ -58,7 +58,7 @@ public class ManageExpenseTest extends Base {
 		login = new LoginPage(driver);
 		login.login("Amina", "B000A0GB7Q");
 		homepage = new HomePage(driver);
-		manageexpensepage = new ManageExpensePage(driver);;
+		manageexpensepage = new ManageExpensePage(driver);
 		manageexpensepage.clickonmanageexpense();
 		manageexpensepage.selectTheExpenseCategory();
 		manageexpensepage.gethHeadTitleText();

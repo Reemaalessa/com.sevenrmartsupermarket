@@ -28,6 +28,5 @@ public class ScreenShot {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-
 	}
 }

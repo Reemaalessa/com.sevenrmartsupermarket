@@ -4,17 +4,31 @@
   <listeners>
     <listener class-name="com.sevenrmartsupermarket.listeners.ExtentsReporter"/>
   </listeners>
-  <test thread-count="12" parallel="tests" name="Running in firefox(failed)">
-    <parameter name="browser" value="firefox"/>
+  <test thread-count="12" parallel="tests" name="Deliveryboy Testing(failed)">
     <classes>
-      <class name="com.sevenrmartsupermarket.tests.LoginTest">
+      <class name="com.sevenrmartsupermarket.tests.ManageDeliveryBoyTest">
         <methods>
           <include name="launchBrowser"/>
           <include name="launchBrowser"/>
           <include name="terminatSession"/>
-          <include name="verifyLogin"/>
+          <include name="VerifyDeliveryboyDetailCreatedSuccesfully"/>
+          <include name="addDeliveryboydetailfromExcel"/>
         </methods>
-      </class> <!-- com.sevenrmartsupermarket.tests.LoginTest -->
+      </class> <!-- com.sevenrmartsupermarket.tests.ManageDeliveryBoyTest -->
     </classes>
-  </test> <!-- Running in firefox(failed) -->
+  </test> <!-- Deliveryboy Testing(failed) -->
+  <test thread-count="12" parallel="tests" name="PushNotificationTest Testing(failed)">
+    <classes>
+      <class name="com.sevenrmartsupermarket.tests.PushNotificationsTest">
+        <methods>
+          <include name="launchBrowser"/>
+          <include name="launchBrowser"/>
+          <include name="verifyPushNotifications"/>
+          <include name="terminatSession"/>
+          <include name="verifyResetButtonFunctionality"/>
+          <include name="verifyenterNotifications"/>
+        </methods>
+      </class> <!-- com.sevenrmartsupermarket.tests.PushNotificationsTest -->
+    </classes>
+  </test> <!-- PushNotificationTest Testing(failed) -->
 </suite> <!-- Failed suite [paralleltesting] -->
