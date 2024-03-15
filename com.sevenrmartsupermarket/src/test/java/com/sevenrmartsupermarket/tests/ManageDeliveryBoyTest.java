@@ -24,7 +24,7 @@ public class ManageDeliveryBoyTest extends Base {
 		homepage = new HomePage(driver);
 		homepage.clickOnManagedeliveryboy();
 		managedeliveryboy = new ManageDeliveryBoyPage(driver);
-		// managedeliveryboy.clickOnAddNewDeliveryboy();
+		
 		managedeliveryboy.enterdeliveryboyinfo("Ammala", "Ammala@gmail.com", "7889654", "mainstreet,add2,CA", "u",
 				"Ami3i4");
 
